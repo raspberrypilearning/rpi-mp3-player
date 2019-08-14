@@ -15,6 +15,13 @@ from guizero import App, PushButton, Slider, Text
 
 --- task ---
 Grab the graphics and place in an `icons` directory - shortlink to be created.
+Set up the guizero app.
+
+```python
+##Initialise the mixer and create objects
+mixer.init()
+app = App(title="Hallelujah Player", height=140, width = 610, layout="grid")
+```
 --- /task ---
 
 --- task ---
@@ -35,9 +42,11 @@ app.display()
 --- /task ---
 
 --- task ---
-Add a volume slider
+Add a volume slider and set the volume to 1/2
 ```python
 volume = Slider(app, command=change_volume, horizontal=False, start="100", end="0", height=128, grid=[8,0,8,3])
+
+volume.value = "50"
 ```
 --- /task ---
 
@@ -49,9 +58,10 @@ playing = Text(app, text=tracks[position], grid=[0,2,7,2])
 --- /task ---
 
 --- task ---
-Add progress slider
+Add progress slider and set text size to 0
 ```python
 progress = Slider(app, width="400", grid=[0,1,7,1])
+progress.text_size = 0
 ```
 --- /task ---
 
@@ -117,6 +127,7 @@ You can run your `check_progress()` function every three seconds.
 playing.repeat(3000, check_progress)
 
 #run the app
+play_track()
 app.display()
 ```
 --- /task ---
@@ -226,3 +237,4 @@ def check_progress():
         playing.value = tracks[position]
 ```
 --- /task ---
+
