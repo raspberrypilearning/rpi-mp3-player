@@ -7,5 +7,7 @@ copyedit: false
 last_tested: "2019-08-13"
 steps:
   - title: Introduction
-  - title: Step title
-  - title: What next?
+  - title: Control functions
+  - title: GUI controls
+  - title: SenseHAT display
+  - title: Physical controls
