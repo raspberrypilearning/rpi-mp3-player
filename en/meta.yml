@@ -1,13 +1,16 @@
+---
 title: rpi-mp3-player
 hero_image: images/banner.png
 description: rpi-mp3-player description
 version: 4
 listed: false
 copyedit: false
-last_tested: "2019-08-13"
+last_tested: '2019-08-13'
 steps:
-  - title: Introduction
-  - title: Control functions
-  - title: GUI controls
-  - title: SenseHAT display
-  - title: Physical controls
+- title: Introduction
+  completion: engaged
+- title: Control functions
+- title: GUI controls
+- title: SenseHAT display
+  completion: internal
+- title: Physical controls
